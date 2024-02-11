@@ -19,9 +19,6 @@ output * bg /home/ktsy/Pictures/Walpaper/wallhaven-85kpek_1920x1080.png fill
 input "1:1:AT_Translated_Set_2_keyboard" {
 	xkb_layout tr
 }
-input "1133:49734:Logitech_G300s_Optical_Gaming_Mouse" {
-	accel_profile "flat"
-}
 
 # Shortcuts
 bindsym $mod+b exec MOZ_ENABLE_WAYLAND=1 firefox
@@ -29,6 +26,7 @@ bindsym $mod+f exec dbus-launch thunar
 bindsym $mod+Return exec $term
 bindsym $mod+q kill
 bindsym $mod+space exec $menu
+bindsym $mod+k exec keepassxc
 
 # Waybar
 bar swaybar_command waybar
